@@ -15,7 +15,7 @@ class _Wild_PageState extends State<Wild_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Farm Animal",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w400),),
+        title: Text("Wild Animal",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w400),),
         backgroundColor: Colors.black,
         centerTitle: true,
       ),

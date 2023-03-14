@@ -15,7 +15,7 @@ class _Mammal_PageState extends State<Mammal_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pets Animal",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w400),),
+        title: Text("Memmal Animal",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w400),),
         backgroundColor: Colors.black,
         centerTitle: true,
       ),

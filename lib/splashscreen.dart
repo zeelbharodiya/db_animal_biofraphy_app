@@ -65,7 +65,43 @@ class _SplashScreenState extends State<SplashScreen> {
                         child: Text("${snapShot.error}"),
                       );
                     } else {
-                      return circularProgressIndicator();
+                      return Container(
+                        color: Colors.white,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              height: 120,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "aplanet",
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.white.withOpacity(0.65),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  Text(
+                                    "We Love the Planet",
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.white.withOpacity(0.75),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              decoration: BoxDecoration(
+                                color: Color(0xffC19E82),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
                     }
                   },
                 ),
@@ -74,27 +110,27 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      appBar(),
-                      const Spacer(),
+                      appBar1(),
+                       Spacer(),
                       Text(
                         "Ready to\nWatch ?",
                         style: titleStyle,
                       ),
-                      const SizedBox(height: 15),
+                       SizedBox(height: 14),
                       Text(
                         "Aplanet is a global leader in real life entertainment, serving a passionate audience of superfans around the world with content that inspires, informs and entertains.",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 15,
                           color: Colors.white.withOpacity(0.6),
-                          fontWeight: FontWeight.w500,
                         ),
                       ),
-                      const SizedBox(height: 15),
+                       SizedBox(height: 40),
                       Text(
                         "Start Enjoying",
                         style: textStyle,
                       ),
-                      const SizedBox(height: 15),
+                       SizedBox(height: 7),
                     ],
                   ),
                 ),

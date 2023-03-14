@@ -79,7 +79,7 @@ class _Detail_PageState extends State<Detail_Page> {
                                     padding: const EdgeInsets.only(
                                         top: 8.0, bottom: 8),
                                     child: Text(
-                                      "  ${detail['name']}  ",
+                                      " ${detail['name']} ",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w700,
                                           fontSize: 27,
@@ -101,7 +101,7 @@ class _Detail_PageState extends State<Detail_Page> {
                                   padding: const EdgeInsets.only(
                                       top: 8.0, bottom: 8),
                                   child: Text(
-                                    "  Pet Animal  ",
+                                    "  ${detail['type']}  ",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
                                         fontSize: 17,
@@ -131,12 +131,12 @@ class _Detail_PageState extends State<Detail_Page> {
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(8)),
                                           child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.only(left: 8.0,right: 8,top: 5,bottom: 5),
                                             child: Text(
                                         "Discription",
                                         style: TextStyle(
                                               color: Colors.blue[900],
-                                              fontSize: 23,
+                                              fontSize: 20,
                                               fontWeight: FontWeight.w600),
                                       ),
                                           )),
