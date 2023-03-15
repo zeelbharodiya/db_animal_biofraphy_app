@@ -169,10 +169,10 @@ class _SplashScreenState extends State<SplashScreen> {
                           future: DBHelper.dbHelper
                               .fetchAllSubscriptionRecords(
                               tableName: "plan_screen",
-                              data: Global.subscription),
+                              data: Global.biography),
                           builder: (context, snapShot) {
                             if (snapShot.hasData) {
-                              List<SubscriptionDB>? res = snapShot.data;
+                              List<BiographyDB>? res = snapShot.data;
 
                               return ListView.builder(
                                 physics: BouncingScrollPhysics(),

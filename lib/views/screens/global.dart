@@ -8,13 +8,13 @@ class Global {
 
   static Color color = const Color(0xffC19E82);
 
-  static List<Subscription> subscription = [
-    Subscription(name: "Pets",page: "Pet_Page"),
-    Subscription(name: "Farm",page: "Farm_Page"),
-    Subscription(name: "Wild",page: "Wild_Page"),
-    Subscription(name: "Mammal",page: "Mammal_Page"),
-    Subscription(name: "Sea",page: "Sea_Page"),
-    Subscription(name: "Insect",page: "Insect_Page"),
+  static List<Biography> biography = [
+    Biography(name: "Pets",page: "Pet_Page"),
+    Biography(name: "Farm",page: "Farm_Page"),
+    Biography(name: "Wild",page: "Wild_Page"),
+    Biography(name: "Mammal",page: "Mammal_Page"),
+    Biography(name: "Sea",page: "Sea_Page"),
+    Biography(name: "Insect",page: "Insect_Page"),
   ];
 
   static List<Map<String,dynamic>> all =
@@ -296,94 +296,5 @@ class Global {
       'image': "https://cdn.pixabay.com/photo/2016/01/13/17/46/damselfly-1138638_960_720.jpg",
       'type' : "Insects",
     },
-  ];
-
-
-
-  static List<Animal> animal = [
-    Animal(
-      name: "Zebra",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Zebra",
-    ),
-    Animal(
-      name: "Elephant",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Elephant",
-    ),
-    Animal(
-      name: "Black Bear",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Bear",
-    ),
-    Animal(
-      name: "Brown Bear",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Bear",
-    ),
-    Animal(
-      name: "Polar Bear",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Bear",
-    ),
-    Animal(
-      name: "Asiatic Lion",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Lion",
-    ),
-    Animal(
-      name: "Transvaal Lion",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Lion",
-    ),
-    Animal(
-      name: "Black Mamba",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Snake",
-    ),
-    Animal(
-      name: "Green Tree Python",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Snake",
-    ),
-    Animal(
-      name: "Indian cobra",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Snake",
-    ),
-    Animal(
-      name: "German Shepherd",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Dog",
-    ),
-    Animal(
-      name: "LebraDor",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Dog",
-    ),
-    Animal(
-      name: "Pit Bull",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Dog",
-    ),
-    Animal(
-      name: "Pug",
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      category: "Dog",
-    ),
   ];
 }

@@ -31,7 +31,7 @@ class DBHelper {
   }
 
   insertSubscriptionRecord(
-      {required String tableName, required List<Subscription> data}) async {
+      {required String tableName, required List<Biography> data}) async {
     await initDB(tableName: tableName);
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
@@ -67,8 +67,8 @@ class DBHelper {
 
 
 
-  Future<List<SubscriptionDB>> fetchAllSubscriptionRecords(
-      {required String tableName, required List<Subscription> data}) async {
+  Future<List<BiographyDB>> fetchAllSubscriptionRecords(
+      {required String tableName, required List<Biography> data}) async {
     await initDB(tableName: tableName);
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -83,8 +83,8 @@ class DBHelper {
 
     List<Map<String, dynamic>> res = await db!.rawQuery(query);
 
-    List<SubscriptionDB> animalsList =
-    res.map((e) => SubscriptionDB.fromData(e)).toList();
+    List<BiographyDB> animalsList =
+    res.map((e) => BiographyDB.fromData(e)).toList();
 
     return animalsList;
   }
